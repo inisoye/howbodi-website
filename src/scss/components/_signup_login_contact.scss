@@ -1,0 +1,83 @@
+.signup-login-contact-section {
+  padding: 70px $small-gutter;
+  text-align: center;
+
+  @include media('>medium') {
+    padding-top: 111px;
+    padding-bottom: 190px;
+  }
+}
+
+.signup-login-heading {
+  @include fontSize($h3-size-small);
+  margin-bottom: 28px;
+
+  @include media('>medium') {
+    @include fontSize($h3-size-large);
+  }
+}
+
+.contact-heading {
+  color: $black;
+  margin-bottom: 35px;
+}
+
+.contact-textarea {
+  border: 1px solid $grey3;
+  border-radius: 6px;
+  color: $blue1;
+  height: 145px;
+  margin-bottom: 10px;
+  max-width: 350px;
+  padding: 15px 5.9%;
+  resize: vertical;
+  width: 100%;
+
+  &::placeholder {
+    color: $blue1;
+    opacity: 1;
+  }
+
+  @include media('>medium') {
+    padding: 15px 24px;
+    max-width: 408px;
+  }
+}
+
+.forgot-password {
+  color: $blue2;
+  display: block;
+  font-weight: $bold;
+  margin: 16px 0 40px;
+  text-decoration: underline;
+  @include fontSize(14px);
+}
+
+.signup-login-contact-button {
+  border: 0;
+  cursor: pointer;
+  height: 45px;
+  max-width: 350px;
+  width: 100%;
+  @extend %base-button;
+
+  @include media('>medium') {
+    height: 60px;
+    padding: 0 24px;
+    max-width: 408px;
+  }
+}
+
+.social-cluster-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.social-cluster-item {
+  margin-right: 10px;
+
+  &.no-right-margin {
+    margin-right: 0;
+  }
+}

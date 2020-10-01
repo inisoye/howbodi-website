@@ -1,0 +1,27 @@
+.detail-container {
+  padding: 30px $small-gutter;
+
+  @include media('>medium') {
+    padding: 86px 30% 235px;
+  }
+}
+
+.detail-heading {
+  color: $grey1;
+  @include fontSize($h2-size-small);
+  width: auto;
+
+  @include media('>medium') {
+    @include fontSize($h2-size-large);
+  }
+}
+
+.detail-body {
+  margin-top: 30px;
+  color: $grey1;
+  line-height: 144%;
+
+  @include media('>medium') {
+    margin-bottom: 20px;
+  }
+}

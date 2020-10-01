@@ -1,0 +1,49 @@
+body {
+  color: $dark1;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: $base-font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font;
+  font-weight: $regular;
+}
+
+* {
+  @include fontSize($base-size-small);
+  @include media('>medium') {
+    @include fontSize($base-size-large);
+  }
+}
+
+h1 {
+  @include fontSize($h1-size-small);
+  @include media('>medium') {
+    @include fontSize($h1-size-large);
+  }
+}
+
+h2 {
+  @include fontSize($h2-size-small);
+  @include media('>medium') {
+    @include fontSize($h2-size-large);
+  }
+}
+
+h3 {
+  @include fontSize($h3-size-small);
+  @include media('>medium') {
+    @include fontSize($h3-size-large);
+  }
+}

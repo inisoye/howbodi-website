@@ -1,0 +1,93 @@
+.hero {
+  background: $dark1;
+  color: $white;
+  padding: 70px $small-gutter;
+
+  @include media('>medium') {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px $large-gutter;
+  }
+
+  @include media('>medium', '<1319px') {
+    padding: 100px $small-gutter;
+  }
+}
+
+.hero-title {
+  width: 14ch;
+  @include media('<325px') {
+    width: 95%;
+  }
+
+  @include media('>588px', '<medium') {
+    @include fontSize($h2-size-large);
+  }
+
+  @include media('>medium', '<1319px') {
+    width: 14ch;
+    @include fontSize($h2-size-large);
+  }
+
+  @include media('>medium', '<1036px') {
+    width: 14ch;
+    @include fontSize($h1-size-small);
+  }
+
+  @include media('>medium', '<820px') {
+    width: 12ch;
+    @include fontSize($h1-size-small);
+  }
+}
+
+.hero-left {
+  padding-bottom: 50px;
+
+  @include media('>medium') {
+    padding: 0;
+  }
+}
+
+.hero-short-paragraph {
+  line-height: 133%;
+  margin-top: 18px;
+  width: 40ch;
+
+  @include media('<411px') {
+    width: 95%;
+  }
+
+  @include media('>medium', '<1319px') {
+    width: 30ch;
+  }
+
+  @include media('>medium', '<1036px') {
+    width: 25ch;
+  }
+}
+
+.hero-button {
+  display: inline-block;
+  margin-top: 36px;
+  @extend %medium-button-size;
+  @extend %base-button;
+
+  @include media('>medium') {
+    margin-top: 45px;
+  }
+}
+
+.hero-right {
+  padding-top: 50px;
+  width: 80%;
+
+  @include media('>medium') {
+    padding-top: 0;
+    width: auto;
+  }
+
+  @include media('>medium', '<1319px') {
+    width: 50%;
+  }
+}

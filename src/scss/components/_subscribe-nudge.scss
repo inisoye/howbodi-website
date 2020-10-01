@@ -1,0 +1,89 @@
+.subscribe-nudge {
+  background: $light2;
+  padding: 64px $small-gutter;
+
+  @include media('>medium') {
+    flex-flow: row nowrap;
+    padding: 118px $large-gutter;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @include media('>medium', '<1319px') {
+    padding: 118px $small-gutter;
+  }
+}
+
+.subscribe-nudge-heading {
+  color: $dark2;
+  margin-bottom: 6px;
+
+  @include media('>medium') {
+    margin-top: 0;
+  }
+}
+
+.subscribe-nudge-small {
+  color: $grey2;
+  @include fontSize(13.5px);
+
+  @include media('>medium') {
+    @include fontSize(17px);
+  }
+}
+
+.subscribe-nudge-right {
+  margin-top: 50px;
+  width: 100%;
+
+  @include media('>medium') {
+    width: 50%;
+    margin-top: 0;
+  }
+}
+
+.subscribe-nudge-input {
+  border-radius: 6px 0px 0px 6px;
+  color: $blue1;
+  padding: 0 8.8%;
+  width: 77.5%;
+
+  &::placeholder {
+    color: $blue1;
+    opacity: 1;
+  }
+
+  @include media('<429px') {
+    width: 65%;
+  }
+
+  @include media('>medium') {
+    width: 70%;
+  }
+}
+
+.subscribe-nudge-button {
+  border-radius: 0px 6px 6px 0px;
+  cursor: pointer;
+  width: 22.5%;
+  @extend %base-button;
+
+  @include media('<429px') {
+    width: 35%;
+  }
+
+  @include media('>medium') {
+    width: 30%;
+  }
+}
+
+.subscribe-nudge-input,
+.subscribe-nudge-button {
+  border: 0;
+  height: 45px;
+
+  @include media('>medium') {
+    height: 60px;
+  }
+}

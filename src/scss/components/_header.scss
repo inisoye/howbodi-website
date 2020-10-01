@@ -1,0 +1,95 @@
+.header {
+  align-items: center;
+  background: $white;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 10px $small-gutter;
+  position: sticky;
+  top: 0;
+  width: 100%;
+
+  @include media('>medium') {
+    flex-flow: row nowrap;
+    padding: 24px $large-gutter;
+  }
+
+  @include media('>medium', '<1319px') {
+    padding: 24px $small-gutter;
+  }
+}
+
+.header-logo-image {
+  @include media('<medium') {
+    height: 30px;
+  }
+}
+
+.header-hamburger-button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  margin-top: 4px;
+  padding: 4px 0 4px 15px;
+}
+
+.header-hamburger-image {
+  height: 24px;
+  stroke: $dark1;
+}
+
+.header-nav {
+  flex-basis: 100%;
+  margin-top: 16px;
+  @include media('>medium') {
+    flex-basis: auto;
+    margin: 0;
+  }
+}
+
+.header-links-list {
+  @include media('>medium') {
+    align-items: center;
+    display: flex;
+    margin: 0;
+  }
+}
+
+.header-links-list-item {
+  margin-top: 12px;
+
+  @include media('>medium') {
+    margin: 0;
+  }
+}
+
+.header-link {
+  color: $black;
+  display: block;
+  font-family: $nav-font;
+  padding: 13px 0;
+  @include fontSize(15px);
+
+  @include media('>medium') {
+    margin-left: 40px;
+  }
+
+  @include media('>medium', '<922px') {
+    margin-left: 20px;
+  }
+
+  &.short-button {
+    color: $white;
+    font-family: $base-font;
+
+    @include media('>medium') {
+      padding: 13px 26px;
+      margin-left: 40px;
+    }
+
+    @include media('>medium', '<922px') {
+      margin-left: 20px;
+      padding: 6px 15px;
+    }
+  }
+}

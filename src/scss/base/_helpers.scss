@@ -1,0 +1,134 @@
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+
+  &:focus {
+    @include fontSize($base-size-large);
+
+    background-color: $light1;
+    clip: auto !important;
+    clip-path: none;
+    color: $dark1;
+    display: block;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+  }
+}
+
+.list-reset {
+  list-style: none;
+  padding: 0;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.test-1-color{
+  background: $test1;
+}
+
+.test-2-color{
+  background: $test2;
+}
+
+.test-3-color{
+  background: $test3;
+}
+
+.test-4-color{
+  background: $test4;
+}
+
+.test-5-color{
+  background: $test5;
+}
+.test-6-color{
+  background: $test6;
+}
+
+.show-or-flex {
+  display: block;
+  @include media('>medium') {
+    display: flex;
+  }
+}
+
+.hidden-small-up {
+  @include media('>small') {
+    display: none;
+  }
+}
+
+.hidden-medium-up {
+  @include media('>medium') {
+    display: none;
+  }
+}
+
+.hidden-small-down {
+  @include media('<small') {
+    display: none;
+  }
+}
+
+.hidden-medium-down {
+  @include media('<medium') {
+    display: none;
+  }
+}
+
+%base-button {
+  background: $green;
+  border-radius: 6px;
+  color: $white;
+  font-family: $base-font;
+  font-weight: $bold;
+  text-align: center;
+}
+
+%medium-button-size {
+  padding: 13px 50px;
+}
+
+%standard-padding {
+  padding: 0 $small-gutter;
+  @include media('>medium') {
+    padding: 0 $large-gutter;
+  }
+}

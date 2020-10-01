@@ -1,0 +1,65 @@
+// --------------------------------------------
+// Colors -------------------------------------
+// --------------------------------------------
+$white: #ffffff;
+$black: #000000;
+$green: #2fc09d;
+
+$dark1: #143861;
+$dark2: #1a2b48;
+
+$light1: #fbfaf6;
+$light2: #f4f8fd;
+$light3: #f9fafb;
+
+$blue1: #3d6e92;
+$blue2: #6a8ba3;
+
+$grey1: #545c70;
+$grey2: #5e6d77;
+$grey3: #dbdee7;
+
+$test1: #3188a9;
+$test2: #52baa1;
+$test3: #ed819c;
+$test4: #6c76d2;
+$test5: #8696a5;
+$test6: #e3af60;
+
+// --------------------------------------------
+// Typography -------------------------------------
+// --------------------------------------------
+//font families
+$base-font: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+  'Helvetica Neue', sans-serif;
+$heading-font: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+  'Helvetica Neue', sans-serif;
+$nav-font: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+$card-body-font: 'Ibm Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+
+//font weights
+$regular: 400;
+$semi-bold: 500;
+$bold: 700;
+
+// font sizes
+$h1-size-small: 32px;
+$h2-size-small: 26px;
+$h3-size-small: 18.5px;
+$base-size-small: 15.5px;
+
+$h1-size-large: 48px;
+$h2-size-large: 36px;
+$h3-size-large: 24px;
+$base-size-large: 17.5px;
+
+// --------------------------------------------
+// Other Fixed Values -------------------------------------
+// --------------------------------------------
+$small-gutter: 8.25%;
+$large-gutter: 12.5%;

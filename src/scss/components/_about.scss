@@ -1,0 +1,15 @@
+.about-wrapper {
+  padding: 40px $small-gutter 70px;
+  color: $black;
+
+  @include media('>medium') {
+    padding: 120px 24% 322px;
+  }
+}
+
+.about-content {
+  @include media('>medium') {
+    @include fontSize(24px);
+    line-height: 125%;
+  }
+}

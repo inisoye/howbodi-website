@@ -1,0 +1,36 @@
+.short-button {
+  @extend %base-button;
+}
+
+.first-title {
+  font-weight: $regular;
+  line-height: 100%;
+}
+
+.second-title {
+  font-weight: $regular;
+  line-height: 100%;
+  line-height: 116.66%;
+}
+
+.outlined-input {
+  border: 1px solid $grey3;
+  border-radius: 6px;
+  color: $blue1;
+  height: 45px;
+  margin-bottom: 10px;
+  padding: 0 5.9%;
+  width: 100%;
+  max-width: 350px;
+
+  &::placeholder {
+    color: $blue1;
+    opacity: 1;
+  }
+
+  @include media('>medium') {
+    height: 60px;
+    padding: 0 24px;
+    max-width: 408px;
+  }
+}

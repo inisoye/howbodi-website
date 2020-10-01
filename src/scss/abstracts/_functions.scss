@@ -1,0 +1,9 @@
+// --------------------------------------------------------------------
+// Convert a px based font-size to rem.--------------------------------
+// Used in _mixins.scss [@mixin fontSize($size)] ----------------------------
+// --------------------------------------------------------------------
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  //Default font size on html element is 100%, equivalent to 16px;
+  @return #{$remSize}rem;
+}

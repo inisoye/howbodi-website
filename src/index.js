@@ -1,12 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './css/style.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { CompleteDataProvider } from './Context';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <CompleteDataProvider>
+      <Router>
+        <App />
+      </Router>
+    </CompleteDataProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
