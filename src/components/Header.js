@@ -75,7 +75,11 @@ const Header = () => {
           />
           <HeaderLink onClick={handleToggle} url='/login' linkText='Log in' />
           <li className='header-links-list-item'>
-            <ShortButton url='/signup' buttonText='Get Started' />
+            <ShortButton
+              onClick={handleToggle}
+              url='/signup'
+              buttonText='Get Started'
+            />
           </li>
         </ul>
       </nav>

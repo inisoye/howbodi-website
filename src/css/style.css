@@ -215,8 +215,8 @@ body {
 }
 
 a {
-  text-decoration: none;
   color: #143861;
+  text-decoration: none;
 }
 
 hr {
@@ -246,6 +246,7 @@ input[type='text'] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  font-size: 16px;
 }
 
 /*--------------------------------------------------------------

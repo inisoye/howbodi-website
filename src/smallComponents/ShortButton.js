@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const ShortButton = ({ buttonText, url }) => {
+const ShortButton = ({ buttonText, url, onClick }) => {
   return (
-    <Link className='short-button header-link' to={url}>
+    <Link onClick={onClick} className='short-button header-link' to={url}>
       {buttonText}
     </Link>
   );
