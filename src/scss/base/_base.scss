@@ -41,8 +41,13 @@ svg {
   display: block;
 }
 
-//remove ios input style
-input[type='text'] {
+//remove IOS input style
+input[type='email'],
+input[type='text'],
+input[type='tel'],
+input[type='password'],
+input[type='number'],
+textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;

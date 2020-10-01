@@ -242,7 +242,12 @@ svg {
   display: block;
 }
 
-input[type='text'] {
+input[type='email'],
+input[type='text'],
+input[type='tel'],
+input[type='password'],
+input[type='number'],
+textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
