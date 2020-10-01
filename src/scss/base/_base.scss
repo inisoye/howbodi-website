@@ -40,3 +40,10 @@ img,
 svg {
   display: block;
 }
+
+//remove ios input style
+input[type='text'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
