@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const HeaderLink = ({ linkText, url }) => {
+const HeaderLink = ({ linkText, url, onClick }) => {
   return (
     <li className='header-links-list-item'>
-      <Link className='header-link' to={url}>
+      <Link onClick={onClick} className='header-link' to={url}>
         {linkText}
       </Link>
     </li>

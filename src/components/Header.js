@@ -66,10 +66,14 @@ const Header = () => {
 
       <nav className={isOpen ? 'header-nav' : 'header-nav hidden-medium-down'}>
         <ul className='header-links-list list-reset'>
-          <HeaderLink url='/about' linkText='About' />
-          <HeaderLink url='/tests' linkText='Tests' />
-          <HeaderLink url='/contact-us' linkText='Contact' />
-          <HeaderLink url='/login' linkText='Log in' />
+          <HeaderLink onClick={handleToggle} url='/about' linkText='About' />
+          <HeaderLink onClick={handleToggle} url='/tests' linkText='Tests' />
+          <HeaderLink
+            onClick={handleToggle}
+            url='/contact-us'
+            linkText='Contact'
+          />
+          <HeaderLink onClick={handleToggle} url='/login' linkText='Log in' />
           <li className='header-links-list-item'>
             <ShortButton url='/signup' buttonText='Get Started' />
           </li>
