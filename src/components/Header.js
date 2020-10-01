@@ -64,7 +64,7 @@ const Header = () => {
         </button>
       </div>
 
-      <nav className='header-nav hidden-medium-down'>
+      <nav className={isOpen ? 'header-nav' : 'header-nav hidden-medium-down'}>
         <ul className='header-links-list list-reset'>
           <HeaderLink url='/about' linkText='About' />
           <HeaderLink url='/tests' linkText='Tests' />
