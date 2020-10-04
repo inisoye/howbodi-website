@@ -346,8 +346,6 @@ h3 {
 }
 
 .screen-reader-text:focus {
-  font-size: 17.5px;
-  font-size: 1.09375rem;
   background-color: #fbfaf6;
   clip: auto !important;
   -webkit-clip-path: none;
@@ -362,6 +360,8 @@ h3 {
   top: 5px;
   width: auto;
   z-index: 100000;
+  font-size: 17.5px;
+  font-size: 1.09375rem;
 }
 
 .list-reset {
@@ -443,13 +443,13 @@ h3 {
   }
 }
 
-@media (max-width: 479px) {
+@media (max-width: 480px) {
   .hidden-small-down {
     display: none;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .hidden-medium-down {
     display: none;
   }
@@ -488,9 +488,17 @@ h3 {
   color: #3d6e92;
   height: 45px;
   margin-bottom: 10px;
+  max-width: 350px;
   padding: 0 5.9%;
   width: 100%;
-  max-width: 350px;
+}
+
+@media (min-width: 769px) {
+  .outlined-input {
+    height: 60px;
+    max-width: 408px;
+    padding: 0 24px;
+  }
 }
 
 .outlined-input::-webkit-input-placeholder {
@@ -511,14 +519,6 @@ h3 {
 .outlined-input::placeholder {
   color: #3d6e92;
   opacity: 1;
-}
-
-@media (min-width: 769px) {
-  .outlined-input {
-    height: 60px;
-    padding: 0 24px;
-    max-width: 408px;
-  }
 }
 
 /*--------------------------------------------------------------
@@ -645,8 +645,8 @@ h3 {
 
 @media (min-width: 769px) {
   .header-link.short-button {
-    padding: 13px 26px;
     margin-left: 40px;
+    padding: 13px 26px;
   }
 }
 
@@ -1213,7 +1213,6 @@ h3 {
 
 @media (min-width: 769px) {
   .homepage-bottom-left {
-    width: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1225,6 +1224,7 @@ h3 {
         -ms-flex-pack: center;
             justify-content: center;
     padding: 80px 12.5%;
+    width: 50%;
   }
 }
 
@@ -1265,8 +1265,8 @@ h3 {
 }
 
 .homepage-bottom-right {
-  width: 100%;
   background-color: #424ca5;
+  width: 100%;
 }
 
 @media (min-width: 769px) {
@@ -1276,8 +1276,8 @@ h3 {
 }
 
 .homepage-bottom-image {
-  width: 100%;
   display: block;
+  width: 100%;
 }
 
 /*--------------------------------------------------------------
@@ -1290,20 +1290,20 @@ h3 {
 
 @media (min-width: 769px) {
   .subscribe-nudge {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
-    padding: 118px 12.5%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    padding: 118px 12.5%;
   }
 }
 
@@ -1344,8 +1344,8 @@ h3 {
 
 @media (min-width: 769px) {
   .subscribe-nudge-right {
-    width: 50%;
     margin-top: 0;
+    width: 50%;
   }
 }
 
@@ -1354,6 +1354,18 @@ h3 {
   color: #3d6e92;
   padding: 0 8.8%;
   width: 77.5%;
+}
+
+@media (max-width: 428px) {
+  .subscribe-nudge-input {
+    width: 65%;
+  }
+}
+
+@media (min-width: 769px) {
+  .subscribe-nudge-input {
+    width: 70%;
+  }
 }
 
 .subscribe-nudge-input::-webkit-input-placeholder {
@@ -1374,18 +1386,6 @@ h3 {
 .subscribe-nudge-input::placeholder {
   color: #3d6e92;
   opacity: 1;
-}
-
-@media (max-width: 428px) {
-  .subscribe-nudge-input {
-    width: 65%;
-  }
-}
-
-@media (min-width: 769px) {
-  .subscribe-nudge-input {
-    width: 70%;
-  }
 }
 
 .subscribe-nudge-button {
@@ -1434,9 +1434,9 @@ h3 {
 
 .detail-heading {
   color: #545c70;
+  width: auto;
   font-size: 26px;
   font-size: 1.625rem;
-  width: auto;
 }
 
 @media (min-width: 769px) {
@@ -1447,9 +1447,9 @@ h3 {
 }
 
 .detail-body {
-  margin-top: 30px;
   color: #545c70;
   line-height: 144%;
+  margin-top: 30px;
 }
 
 @media (min-width: 769px) {
@@ -1462,8 +1462,8 @@ h3 {
 # About
 --------------------------------------------------------------*/
 .about-wrapper {
-  padding: 40px 8.25% 70px;
   color: #000000;
+  padding: 40px 8.25% 70px;
 }
 
 @media (min-width: 769px) {
@@ -1474,9 +1474,9 @@ h3 {
 
 @media (min-width: 769px) {
   .about-content {
+    line-height: 125%;
     font-size: 24px;
     font-size: 1.5rem;
-    line-height: 125%;
   }
 }
 
@@ -1490,15 +1490,15 @@ h3 {
 
 @media (min-width: 769px) {
   .signup-login-contact-section {
-    padding-top: 111px;
     padding-bottom: 190px;
+    padding-top: 111px;
   }
 }
 
 .signup-login-heading {
+  margin-bottom: 28px;
   font-size: 18.5px;
   font-size: 1.15625rem;
-  margin-bottom: 28px;
 }
 
 @media (min-width: 769px) {
@@ -1525,6 +1525,13 @@ h3 {
   width: 100%;
 }
 
+@media (min-width: 769px) {
+  .contact-textarea {
+    max-width: 408px;
+    padding: 15px 24px;
+  }
+}
+
 .contact-textarea::-webkit-input-placeholder {
   color: #3d6e92;
   opacity: 1;
@@ -1543,13 +1550,6 @@ h3 {
 .contact-textarea::placeholder {
   color: #3d6e92;
   opacity: 1;
-}
-
-@media (min-width: 769px) {
-  .contact-textarea {
-    padding: 15px 24px;
-    max-width: 408px;
-  }
 }
 
 .forgot-password {
@@ -1573,8 +1573,8 @@ h3 {
 @media (min-width: 769px) {
   .signup-login-contact-button {
     height: 60px;
-    padding: 0 24px;
     max-width: 408px;
+    padding: 0 24px;
   }
 }
 
@@ -1605,18 +1605,18 @@ h3 {
 
 @media (min-width: 769px) {
   .footer-top {
-    padding: 82px 12.5%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 82px 12.5%;
   }
 }
 
@@ -1678,8 +1678,8 @@ h3 {
 }
 
 .footer-heading {
-  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   color: #2fc09d;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 @media (min-width: 769px) {
@@ -1704,10 +1704,10 @@ h3 {
 }
 
 .footest {
-  padding: 22px 8.25%;
-  margin-top: 70px;
   background: #f9fafb;
   font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  margin-top: 70px;
+  padding: 22px 8.25%;
 }
 
 @media (min-width: 769px) {

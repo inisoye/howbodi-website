@@ -12,7 +12,6 @@
   word-wrap: normal !important;
 
   &:focus {
-    @include fontSize($base-size-large);
 
     background-color: $light1;
     clip: auto !important;
@@ -27,6 +26,7 @@
     top: 5px;
     width: auto;
     z-index: 100000;
+    @include fontSize($base-size-large);
   }
 }
 
@@ -59,26 +59,26 @@
   display: flex;
 }
 
-.test-1-color{
+.test-1-color {
   background: $test1;
 }
 
-.test-2-color{
+.test-2-color {
   background: $test2;
 }
 
-.test-3-color{
+.test-3-color {
   background: $test3;
 }
 
-.test-4-color{
+.test-4-color {
   background: $test4;
 }
 
-.test-5-color{
+.test-5-color {
   background: $test5;
 }
-.test-6-color{
+.test-6-color {
   background: $test6;
 }
 
@@ -102,13 +102,13 @@
 }
 
 .hidden-small-down {
-  @include media('<small') {
+  @include media('<=small') {
     display: none;
   }
 }
 
 .hidden-medium-down {
-  @include media('<medium') {
+  @include media('<=medium') {
     display: none;
   }
 }

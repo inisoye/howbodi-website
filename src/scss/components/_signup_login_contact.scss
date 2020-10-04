@@ -3,14 +3,14 @@
   text-align: center;
 
   @include media('>medium') {
-    padding-top: 111px;
     padding-bottom: 190px;
+    padding-top: 111px;
   }
 }
 
 .signup-login-heading {
-  @include fontSize($h3-size-small);
   margin-bottom: 28px;
+  @include fontSize($h3-size-small);
 
   @include media('>medium') {
     @include fontSize($h3-size-large);
@@ -33,14 +33,14 @@
   resize: vertical;
   width: 100%;
 
+  @include media('>medium') {
+    max-width: 408px;
+    padding: 15px 24px;
+  }
+
   &::placeholder {
     color: $blue1;
     opacity: 1;
-  }
-
-  @include media('>medium') {
-    padding: 15px 24px;
-    max-width: 408px;
   }
 }
 
@@ -63,8 +63,8 @@
 
   @include media('>medium') {
     height: 60px;
-    padding: 0 24px;
     max-width: 408px;
+    padding: 0 24px;
   }
 }
 

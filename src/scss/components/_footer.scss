@@ -2,11 +2,11 @@
   padding: 70px $small-gutter 0;
 
   @include media('>medium') {
-    padding: 82px $large-gutter;
-    display: flex;
-    justify-content: space-between;
     align-items: flex-start;
+    display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 82px $large-gutter;
   }
 
   @include media('>medium', '<1319px') {
@@ -57,8 +57,8 @@
 }
 
 .footer-heading {
-  font-family: $nav-font;
   color: $green;
+  font-family: $nav-font;
 
   @include media('>medium') {
     margin-top: 0;
@@ -81,10 +81,10 @@
 }
 
 .footest {
-  padding: 22px $small-gutter;
-  margin-top: 70px;
   background: $light3;
   font-family: $nav-font;
+  margin-top: 70px;
+  padding: 22px $small-gutter;
 
   @include media('>medium') {
     padding: 27px $large-gutter;

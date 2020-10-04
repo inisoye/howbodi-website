@@ -3,11 +3,11 @@
   padding: 64px $small-gutter;
 
   @include media('>medium') {
-    flex-flow: row nowrap;
-    padding: 118px $large-gutter;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 118px $large-gutter;
   }
 
   @include media('>medium', '<1319px') {
@@ -38,8 +38,8 @@
   width: 100%;
 
   @include media('>medium') {
-    width: 50%;
     margin-top: 0;
+    width: 50%;
   }
 }
 
@@ -49,17 +49,17 @@
   padding: 0 8.8%;
   width: 77.5%;
 
-  &::placeholder {
-    color: $blue1;
-    opacity: 1;
-  }
-
   @include media('<429px') {
     width: 65%;
   }
 
   @include media('>medium') {
     width: 70%;
+  }
+
+  &::placeholder {
+    color: $blue1;
+    opacity: 1;
   }
 }
 

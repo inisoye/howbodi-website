@@ -8,8 +8,8 @@
 
 .detail-heading {
   color: $grey1;
-  @include fontSize($h2-size-small);
   width: auto;
+  @include fontSize($h2-size-small);
 
   @include media('>medium') {
     @include fontSize($h2-size-large);
@@ -17,9 +17,9 @@
 }
 
 .detail-body {
-  margin-top: 30px;
   color: $grey1;
   line-height: 144%;
+  margin-top: 30px;
 
   @include media('>medium') {
     margin-bottom: 20px;

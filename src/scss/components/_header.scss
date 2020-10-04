@@ -83,8 +83,8 @@
     font-family: $base-font;
 
     @include media('>medium') {
-      padding: 13px 26px;
       margin-left: 40px;
+      padding: 13px 26px;
     }
 
     @include media('>medium', '<922px') {

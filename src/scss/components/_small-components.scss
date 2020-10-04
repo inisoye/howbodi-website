@@ -19,18 +19,18 @@
   color: $blue1;
   height: 45px;
   margin-bottom: 10px;
+  max-width: 350px;
   padding: 0 5.9%;
   width: 100%;
-  max-width: 350px;
+
+  @include media('>medium') {
+    height: 60px;
+    max-width: 408px;
+    padding: 0 24px;
+  }
 
   &::placeholder {
     color: $blue1;
     opacity: 1;
-  }
-
-  @include media('>medium') {
-    height: 60px;
-    padding: 0 24px;
-    max-width: 408px;
   }
 }

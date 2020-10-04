@@ -12,11 +12,11 @@
   padding: 80px $small-gutter;
 
   @include media('>medium') {
-    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 80px $large-gutter;
+    width: 50%;
   }
 
   @include media('>medium', '<1319px') {
@@ -48,8 +48,8 @@
 }
 
 .homepage-bottom-right {
-  width: 100%;
   background-color: #424ca5;
+  width: 100%;
 
   @include media('>medium') {
     width: 50%;
@@ -57,6 +57,6 @@
 }
 
 .homepage-bottom-image {
-  width: 100%;
   display: block;
+  width: 100%;
 }
