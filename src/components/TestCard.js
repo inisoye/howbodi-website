@@ -5,15 +5,13 @@ const TestCard = ({ testData, className }) => {
   // destructure prop
   const { testIcon, testName, testShortDescription, slug } = testData;
 
-  // console.log(className);
-
   return (
     <Link className='test-card-link' to={`/tests/${slug}`}>
       <article className={`${className} test-card-container`}>
         <img
           className='test-card-image'
           src={testIcon.fields.file.url}
-          alt=''
+          alt={testName}
         />
         <h3 className='test-card-heading'>{testName}</h3>
         <div className='test-card-bottom'>

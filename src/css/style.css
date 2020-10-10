@@ -860,6 +860,10 @@ h3 {
   color: #ffffff;
   margin-top: 60px;
   padding: 7.4%;
+  -webkit-transition: -webkit-box-shadow 500ms;
+  transition: -webkit-box-shadow 500ms;
+  transition: box-shadow 500ms;
+  transition: box-shadow 500ms, -webkit-box-shadow 500ms;
 }
 
 @media (min-width: 769px) {
@@ -867,6 +871,31 @@ h3 {
     height: 359px;
     padding: 35px 7.4%;
   }
+}
+
+.test-card-container .test-card-arrow {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
+}
+
+@media (max-width: 767px) {
+  .test-card-container .test-card-arrow {
+    height: 40px;
+  }
+}
+
+.test-card-container:hover {
+  -webkit-box-shadow: 0 10px 50px 0 rgba(20, 56, 97, 0.5);
+          box-shadow: 0 10px 50px 0 rgba(20, 56, 97, 0.5);
+}
+
+.test-card-container:hover .test-card-arrow {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
 }
 
 .test-card-heading {
@@ -895,13 +924,8 @@ h3 {
   font-family: "Ibm Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   line-height: 137%;
   margin-bottom: 0;
+  padding-right: 8%;
   width: 30ch;
-}
-
-@media (max-width: 767px) {
-  .test-card-arrow {
-    height: 40px;
-  }
 }
 
 .tests-page-top {
@@ -1188,6 +1212,11 @@ h3 {
 
 .previous-button-text {
   margin-left: 10%;
+}
+
+.single-test-form,
+.single-test-buttons {
+  display: none;
 }
 
 /*--------------------------------------------------------------

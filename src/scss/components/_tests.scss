@@ -53,10 +53,29 @@
   color: $white;
   margin-top: 60px;
   padding: 7.4%;
+  transition: box-shadow 500ms;
 
   @include media('>medium') {
     height: 359px;
     padding: 35px 7.4%;
+  }
+
+  // Nesting added to facilitate hover transition
+  .test-card-arrow {
+    transform: translateX(0);
+    transition: transform 500ms;
+
+    @include media('<medium') {
+      height: 40px;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 10px 50px 0 rgba(20, 56, 97, 0.5);
+
+    .test-card-arrow {
+      transform: translateX(10px);
+    }
   }
 }
 
@@ -80,13 +99,8 @@
   font-family: $card-body-font;
   line-height: 137%;
   margin-bottom: 0;
+  padding-right: 8%;
   width: 30ch;
-}
-
-.test-card-arrow {
-  @include media('<medium') {
-    height: 40px;
-  }
 }
 
 // tests page
@@ -302,4 +316,9 @@
 
 .previous-button-text {
   margin-left: 10%;
+}
+
+.single-test-form,
+.single-test-buttons {
+  display: none;
 }
