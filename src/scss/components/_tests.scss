@@ -17,6 +17,10 @@
     margin: auto;
     width: 23ch;
   }
+
+  @include media('>medium', '<1319px') {
+    @include fontSize(28px);
+  }
 }
 
 .tests-list {

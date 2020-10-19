@@ -69,6 +69,10 @@
   width: 22.5%;
   @extend %base-button;
 
+  @include media('>medium') {
+    @include fontSize(15px);
+  }
+
   @include media('<429px') {
     width: 35%;
   }

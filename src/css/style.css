@@ -818,6 +818,13 @@ h3 {
   }
 }
 
+@media (min-width: 769px) and (max-width: 1318px) {
+  .featured-tests-title {
+    font-size: 28px;
+    font-size: 1.75rem;
+  }
+}
+
 @media (min-width: 769px) {
   .tests-list {
     display: -webkit-box;
@@ -1421,6 +1428,13 @@ h3 {
   border-radius: 0px 6px 6px 0px;
   cursor: pointer;
   width: 22.5%;
+}
+
+@media (min-width: 769px) {
+  .subscribe-nudge-button {
+    font-size: 15px;
+    font-size: 0.9375rem;
+  }
 }
 
 @media (max-width: 428px) {
